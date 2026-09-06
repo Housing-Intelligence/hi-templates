@@ -1,24 +1,15 @@
 {
-  "environment": "dev",
-
-  "ec2": {
-    "enabled": true,
+  "ec2_parameters": {
     "instance_type": "t3.small"
   },
-
-  "redis": {
-    "enabled": true,
-    "engine": "redis",
-    "node_type": "cache.t3.micro",
-    "port": 6379
+  "pg_parameters": {
+    "allocated_storage": "10",
+    "storage_type": "gp3",
+    "max_allocated_storage": "20",
+    "instance_class": "db.t4g.micro"
   },
-
-  "postgresql": {
-    "enabled": true,
-    "engine": "postgres",
-    "engine_version": "16",
-    "instance_class": "db.t3.micro",
-    "allocated_storage": 20,
-    "port": 5432
+  "redis_parameters": {
+    "node_type": "cache.t4g.micro",
+    "number_cache_clusters": "1"
   }
 }
