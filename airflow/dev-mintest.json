@@ -4,7 +4,7 @@
   },
   "pg_parameters": {
     "allocated_storage": "10",
-    "storage_type": "gp3",
+    "storage_type": "gp2",
     "max_allocated_storage": "20",
     "instance_class": "db.t4g.micro"
   },
